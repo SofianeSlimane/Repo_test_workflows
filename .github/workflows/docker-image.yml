@@ -14,4 +14,4 @@ jobs:
       - uses: docker/build-push-action@v4
         with:
           push: true
-          tags: sofianeslimane/repo_test_workflows:latest
+  
