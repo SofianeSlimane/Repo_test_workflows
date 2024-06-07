@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v4
-        with:
-          repository: sofianeslimane/Repo_test_workflows
     
       - uses: docker/login-action@v2
         with:
@@ -16,4 +14,4 @@ jobs:
       - uses: docker/build-push-action@v4
         with:
           push: true
-          tags: user/app:latest
+          tags: sofianeslimane/Repo_test_workflows:latest
