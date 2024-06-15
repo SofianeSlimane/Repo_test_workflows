@@ -5,10 +5,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - run: docker build -t repo_test_workflows/sofianeslimane/my-image:mytag .
+            - run: docker build -t sofianeslimane/my_image:iamtag .
             - uses: docker/login-action@v3
               with:
                 registry: ghcr.io
                 username: ${{ github.actor }}
                 password: ${{ secrets.CR_PAT }}
-            - run: docker push ghcr.io/repo_test_worflows/sofianeslimane/mytag
+            - run: docker push ghcr.io/sofianeslimane/my_image:iamtag
