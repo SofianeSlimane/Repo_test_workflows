@@ -11,4 +11,4 @@ jobs:
                 registry: ghcr.io
                 username: ${{ github.actor }}
                 password: ${{ secrets.CR_PAT }}
-            - run: docker push ghcr.io/sofianeslimane/my-image:latest
+            - run: docker push ghcr.io/sofianeslimane/mytag
